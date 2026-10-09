@@ -86,7 +86,9 @@ This is the home directory for your AI tooling setup. It combines:
   accessibility-audit, compliance-audit, html-seo-review, playwright / webapp-testing,
   **website-compliance-checklist** (20-item pre-launch legal + accessibility audit).
 - **Agent/productivity** — i-have-adhd, clarity, skill-creator, writing-*,
-  grilling, grilling-with-docs, graphify-setup, opencode, research, backlog-md.
+  grilling, grilling-with-docs, graphify-setup, opencode, research, backlog-md,
+  **find-skills** (discover + install more skills from the open ecosystem via
+  `npx skills find`).
 
 ## Templates (`templates/site-requirements/`)
 

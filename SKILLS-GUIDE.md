@@ -2,6 +2,11 @@
 
 > Comprehensive mapping of skills, components, and patterns for every project type.
 
+> **Can't find a skill for your task below?** Use the `find-skills` skill — it
+> searches the open agent-skills ecosystem (`npx skills find <query>`, browse at
+> https://skills.sh/) and installs the best match for you. See
+> [Meta / Discovery](#meta--discovery).
+
 ---
 
 ## Table of Contents
@@ -19,6 +24,7 @@
 3. [Game Development](#game-development)
 4. [Desktop Applications](#desktop-applications)
 5. [Skill Reference](#skill-reference)
+   - [Meta / Discovery](#meta--discovery)
 6. [Icons](#icons)
 7. [Component Reference](#component-reference)
 8. [Animation Reference](#animation-reference)
@@ -678,6 +684,11 @@ Components: shadcn/ui or custom
 | Skill | Use Case |
 |-------|----------|
 | `threeui-integration` | Add ThreeUI Community (Three.js/shader) backgrounds, heroes, buttons, text effects to an existing web project. 43 components / 104 variants. Requires a browser preview + `npm run build` before claiming done |
+
+### Meta / Discovery
+| Skill | Use Case |
+|-------|----------|
+| `find-skills` | Discover and install skills that aren't already in this workspace. Searches the open ecosystem (`npx skills find <query>`, leaderboard at https://skills.sh/), verifies install count/source before recommending, then installs with `npx skills add <owner/repo@skill> -g -y`. Use when a task has no matching skill above |
 
 ---
 
