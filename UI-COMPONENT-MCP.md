@@ -5,12 +5,16 @@ real browser** through four MCP servers. They are wired into opencode's global
 config (`~/.config/opencode/opencode.jsonc`) but are **not always running** — see
 the lifecycle rules below so they only start when you need them.
 
+For a new build, run `skills/design-phase/SKILL.md` first: components are chosen
+in `COMPONENT-INVENTORY.md` and frozen in `DESIGN-APPROVAL.md` before any
+integration.
+
 ## The four MCP servers
 
 | Server | What it does | Default | How it runs |
 |---|---|---|---|
 | `playwright` | Opens your app in a real browser, clicks through new UI, verifies it renders & behaves, no console errors | **enabled** | local `npx @playwright/mcp@latest` |
-| `shadcn` | Browse/search/install shadcn-compatible components (shadcn/ui, Skiper UI, Magic UI, Origin UI registries) | disabled | local `npx shadcn@latest mcp` |
+| `shadcn` | Browse/search/install shadcn-compatible components (shadcn/ui, Skiper UI, Magic UI, Origin UI, suiss/ui registries) | disabled | local `npx shadcn@latest mcp` |
 | `vengeanceui` | Browse/search VengeanceUI's animated component library (buttons, motion, layout kits) | disabled | local `node ...\.mcp-servers\vengeanceui-mcp\dist\server.js` |
 | `figma` | Pull exact layout, spacing, and props from a Figma file when one is provided | disabled | remote `https://mcp.figma.com/mcp` (OAuth) |
 
@@ -129,10 +133,19 @@ extra registries (Skiper UI, Magic UI, Origin UI), put them in that file:
   "registries": {
     "@skiper": "https://skiperui.com/r/{name}.json",
     "@magicui": "https://magicui.design/r/{name}.json",
-    "@originui": "https://originui.com/r/{name}.json"
+    "@originui": "https://originui.com/r/{name}.json",
+    "@esuiss": "https://suiss.app/ui/r/{style}/{name}.json"
   }
 }
 ```
+
+`@esuiss` is suiss/ui — a 232-item shadcn-spec registry (components, blocks,
+charts, patterns, interactions) for React, React Native, SwiftUI and Jetpack
+Compose. The `{style}` placeholder is resolved from `components.json`, so
+`radix-nova` fetches the radix base in the nova style; RN and native styles use
+the platform-specific names (`rn-uniwind-suiss`, `rn-nativewind-suiss`,
+`rn-stylesheet-suiss`, `swift-suiss`, `kotlin-suiss`). Full protocol:
+`skills/suiss-ui/SKILL.md`.
 
 ## Crew ownership
 

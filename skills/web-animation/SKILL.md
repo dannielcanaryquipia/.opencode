@@ -1,3 +1,8 @@
+---
+name: web-animation
+description: Add motion to React web interfaces with Motion (Framer Motion) and CSS — entrance animations, scroll reveals, staggered lists, page transitions, micro-interactions, hover effects and loading states. Use when the user says "animate this", "add motion", "scroll reveal", "fade in", "page transition", "hover effect" or "make it feel alive". Every pattern includes prefers-reduced-motion support.
+---
+
 # Web Animation Skill
 
 > Add animations, scroll effects, micro-interactions, and motion to any React project.

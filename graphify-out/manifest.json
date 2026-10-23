@@ -2170,8 +2170,8 @@
     "semantic_hash": "cf77291035fa0491fe8c84ffe188370a"
   },
   "TEAM-GUIDE.md": {
-    "mtime": 1790947556.0229201,
-    "ast_hash": "97aea13eee4bc3461d58e63cfb77cf08",
+    "mtime": 1792736622.6072605,
+    "ast_hash": "d9a779a7ab4f663f24192a0e6f4360dd",
     "semantic_hash": ""
   },
   "skills/expo-skills/.claude/skills/expo-skill-eval/SKILL.md": {
@@ -2790,17 +2790,17 @@
     "semantic_hash": "5d8abbc247b24b14ae68965fc7be423d"
   },
   ".obsidian/app.json": {
-    "mtime": 1790753134.0731306,
+    "mtime": 1792546288.223776,
     "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
     "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
   },
   ".obsidian/appearance.json": {
-    "mtime": 1790753135.8605556,
+    "mtime": 1792546288.7591178,
     "ast_hash": "86d9f6137e6a7f85b82e26b03cbcde9d",
     "semantic_hash": "86d9f6137e6a7f85b82e26b03cbcde9d"
   },
   ".obsidian/core-plugins.json": {
-    "mtime": 1790753131.8745227,
+    "mtime": 1792546287.6726897,
     "ast_hash": "7c877bea49eaeabb100563bd157b9051",
     "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
   },
@@ -2810,7 +2810,7 @@
     "semantic_hash": ""
   },
   ".obsidian/workspace.json": {
-    "mtime": 1790753184.2483451,
+    "mtime": 1792546289.1139364,
     "ast_hash": "6880a2a0e0319835ffdee7d166911c06",
     "semantic_hash": ""
   },
@@ -2845,9 +2845,9 @@
     "semantic_hash": "021f6c867105fd0c2beb5f26c44b5828"
   },
   "skills/clarity/site/components.json": {
-    "mtime": 1788402680.5423613,
-    "ast_hash": "f8b0f0feb65e8d3b556765c6d123a37e",
-    "semantic_hash": "f8b0f0feb65e8d3b556765c6d123a37e"
+    "mtime": 1792734150.0163393,
+    "ast_hash": "d49068a3eae0cc259e0931a4ce1de4ff",
+    "semantic_hash": ""
   },
   "skills/clarity/site/netlify/edge-functions/content-negotiation.js": {
     "mtime": 1788402680.5580368,
@@ -11090,8 +11090,8 @@
     "semantic_hash": ""
   },
   "skills/ui-component-integration.md": {
-    "mtime": 1788575176.48985,
-    "ast_hash": "6ad7647a612884648a752c7dd858dd32",
+    "mtime": 1792734170.5285113,
+    "ast_hash": "1d4f2828c3bc1ae0380d5135f8091d0d",
     "semantic_hash": ""
   },
   "skills/ui-styling/LICENSE.txt": {
@@ -11460,8 +11460,8 @@
     "semantic_hash": ""
   },
   "templates/PROJECT-TEAM.md": {
-    "mtime": 1785659455.356098,
-    "ast_hash": "1fafd71b6bf4dbea00ca447530928d1d",
+    "mtime": 1792737681.430773,
+    "ast_hash": "a6787d3e027a1ad2e7485dd3fe2a4708",
     "semantic_hash": ""
   },
   "skills/Claude-Cortex/docs/assets/images/cortex-banner.png": {
@@ -11920,8 +11920,8 @@
     "semantic_hash": ""
   },
   "UI-COMPONENT-MCP.md": {
-    "mtime": 1788575172.401546,
-    "ast_hash": "0336b793a529f19ac4988f9c7d162927",
+    "mtime": 1792736637.7950087,
+    "ast_hash": "d337092ea892ed02b5b97412c8c49ece",
     "semantic_hash": ""
   },
   "opencode.json": {
@@ -12125,18 +12125,18 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1789037126.2081635,
-    "ast_hash": "193511c422d01c88ea6c0f5c255a1f17",
+    "mtime": 1792736067.93347,
+    "ast_hash": "72577d8433658ca6bdfb3aaaa61f6118",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1788533134.75939,
-    "ast_hash": "8a6643a420fdad6bfb583523bc6cef16",
+    "mtime": 1792738319.6024916,
+    "ast_hash": "75ae69c2e856386376d573900728d484",
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1788575150.0382965,
-    "ast_hash": "19f813d9a5c93de4ca59a497b21247b0",
+    "mtime": 1792736636.065518,
+    "ast_hash": "1c4dbc2fe00a33e6405a6728d96e9c67",
     "semantic_hash": ""
   },
   "OPEN-SOURCE-TEMPLATES.md": {
@@ -12150,13 +12150,13 @@
     "semantic_hash": ""
   },
   "SKILLS-GUIDE.md": {
-    "mtime": 1790947793.339411,
-    "ast_hash": "8482249108bd3ddf8898bdb9e113ac9d",
+    "mtime": 1792736068.6855521,
+    "ast_hash": "f0bdf2b8e4189e895cef2cad26f2877e",
     "semantic_hash": ""
   },
   "WEB-ANIMATION.md": {
-    "mtime": 1788575162.6843565,
-    "ast_hash": "0c62adada729460d8eb017d0b36d9e92",
+    "mtime": 1792736637.1411343,
+    "ast_hash": "d8440b998deb72950bd16de5f406ad79",
     "semantic_hash": ""
   },
   "skills/i-have-adhd/.cursor/skills/i-have-adhd/SKILL.md": {
@@ -12305,8 +12305,8 @@
     "semantic_hash": ""
   },
   "skills/web-animation/SKILL.md": {
-    "mtime": 1788575158.3804252,
-    "ast_hash": "f9390b8bfd0d98a50c06599f0292d43d",
+    "mtime": 1792734200.976418,
+    "ast_hash": "52ae8557a01a8c22b77b728850fb797d",
     "semantic_hash": ""
   },
   "templates/WEB-ANIMATION-QUICKSTART.md": {
@@ -12320,8 +12320,8 @@
     "semantic_hash": ""
   },
   "templates/site-requirements/MOTION-SPEC.md": {
-    "mtime": 1788580275.0038471,
-    "ast_hash": "30e9c9116b3e88d76333ceccced4b966",
+    "mtime": 1792736635.4561386,
+    "ast_hash": "6a10ed1aa8db56cb6461cf311efe0d63",
     "semantic_hash": ""
   },
   "skills/i-have-adhd/logo.png": {
@@ -12330,18 +12330,18 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1790393953.294585,
-    "ast_hash": "e15b7dabe1932aea8821a86f1e26b011",
+    "mtime": 1791516743.0889492,
+    "ast_hash": "07bd1fe22519a8149ff250cba488fa88",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790947745.8222394,
-    "ast_hash": "20814a74d8b97fcabdae293e97a67033",
+    "mtime": 1792738319.6024916,
+    "ast_hash": "7cc507d90b82fbe46b45b107f8b80da4",
     "semantic_hash": ""
   },
   "skills-upload/INDEX.md": {
-    "mtime": 1790948066.5385246,
-    "ast_hash": "85240acf171e33078b2ffd4301cde4dc",
+    "mtime": 1791516232.8640497,
+    "ast_hash": "505724e31c5f5e38808225f689fd38c3",
     "semantic_hash": ""
   },
   "skills-upload/bundles/BUNDLES-INDEX.md": {
@@ -148697,6 +148697,136 @@
   "skills/website-compliance-checklist/templates/audit-report.md": {
     "mtime": 1790945442.0,
     "ast_hash": "de930a1dbbd379d137fb813814e90c07",
+    "semantic_hash": ""
+  },
+  "MODEL-PLAN.md": {
+    "mtime": 1792637134.4640982,
+    "ast_hash": "c9c58829f17bbd790167e22191749f5a",
+    "semantic_hash": ""
+  },
+  "needed-documents/APP-FLOW.md": {
+    "mtime": 1791869043.475889,
+    "ast_hash": "df1fdb6eb7368fe9d8899e540546f316",
+    "semantic_hash": ""
+  },
+  "needed-documents/DATABASE-SCHEMA.md": {
+    "mtime": 1791869066.8098848,
+    "ast_hash": "86159f2039852d58795c9be72cc8073b",
+    "semantic_hash": ""
+  },
+  "needed-documents/DESIGN-BRIEF.md": {
+    "mtime": 1791869089.3376188,
+    "ast_hash": "94e5a570a25ce4241cd7cddcdb070f77",
+    "semantic_hash": ""
+  },
+  "needed-documents/IMPLEMENTATION-PLAN.md": {
+    "mtime": 1792736070.2913938,
+    "ast_hash": "460f59be73fd9710a22f2aa1ddaddcbe",
+    "semantic_hash": ""
+  },
+  "needed-documents/PRD.md": {
+    "mtime": 1791869000.5208259,
+    "ast_hash": "6452752fd7e7fcb7ea11c813d400e292",
+    "semantic_hash": ""
+  },
+  "needed-documents/README.md": {
+    "mtime": 1792736638.3254826,
+    "ast_hash": "275747e6d05bec72432aeed82bad5199",
+    "semantic_hash": ""
+  },
+  "needed-documents/TECHNICAL-GUIDE.md": {
+    "mtime": 1792736635.0819335,
+    "ast_hash": "07d3a9e2cbdd75ea2ddda3f1c36c7d84",
+    "semantic_hash": ""
+  },
+  "needed-documents/TRD.md": {
+    "mtime": 1791869021.5336034,
+    "ast_hash": "1a15a7911964bf3c856952222bb7b867",
+    "semantic_hash": ""
+  },
+  "skills/design-phase/SKILL.md": {
+    "mtime": 1792736086.1539676,
+    "ast_hash": "dff5df52d24e2bd29aa4c57c4fd3c411",
+    "semantic_hash": ""
+  },
+  "skills/find-skills/SKILL.md": {
+    "mtime": 1791516098.1128094,
+    "ast_hash": "0e99d6852ad24dc6a6d9392a6065a453",
+    "semantic_hash": ""
+  },
+  "skills/model-role-picker/SKILL.md": {
+    "mtime": 1792622095.1246588,
+    "ast_hash": "7639d035dcc1e9160cbb4088c2d1e4dc",
+    "semantic_hash": ""
+  },
+  "skills/model-role-picker/assets/decision-table-template.md": {
+    "mtime": 1792622204.5612147,
+    "ast_hash": "38e9d4f6cad79b28bddf7526d216cbea",
+    "semantic_hash": ""
+  },
+  "skills/model-role-picker/references/model-matrix.md": {
+    "mtime": 1792622169.850554,
+    "ast_hash": "86879f81ba3d4c29e4eb327162859bdc",
+    "semantic_hash": ""
+  },
+  "skills/model-role-picker/references/phase-mapping.md": {
+    "mtime": 1792622195.8936522,
+    "ast_hash": "537148732d56bf8289ee2ddae891912a",
+    "semantic_hash": ""
+  },
+  "skills/suiss-ui/SKILL.md": {
+    "mtime": 1792736069.3051412,
+    "ast_hash": "e2690d7f2fd7cf6ad50ad2a8dc19bbbf",
+    "semantic_hash": ""
+  },
+  "templates/design-phase/COMPONENT-INVENTORY.md": {
+    "mtime": 1792736039.0370505,
+    "ast_hash": "56d4435435e75cde8310433fad795b14",
+    "semantic_hash": ""
+  },
+  "templates/design-phase/DESIGN-APPROVAL.md": {
+    "mtime": 1792736054.616788,
+    "ast_hash": "8dfd816b60feaa6f861c8cae7723ec38",
+    "semantic_hash": ""
+  },
+  "templates/design-phase/SCREEN-MAP.md": {
+    "mtime": 1792736034.5630627,
+    "ast_hash": "8467f2af371f9b9d8317ba3c313a27a8",
+    "semantic_hash": ""
+  },
+  "templates/site-requirements/PLAN.md": {
+    "mtime": 1792736655.2676487,
+    "ast_hash": "c06f078927bdff7b965b95ccb94841e9",
+    "semantic_hash": ""
+  },
+  "needed-documents/APPFLOW.jpg": {
+    "mtime": 1791853886.5752864,
+    "ast_hash": "f0e3718b0125b7f31d824833f77c2237",
+    "semantic_hash": ""
+  },
+  "needed-documents/DATABASESCHEMA.jpg": {
+    "mtime": 1791853903.9754407,
+    "ast_hash": "2216418754e71b9698f89759c6b858cd",
+    "semantic_hash": ""
+  },
+  "needed-documents/DESIGNBRIEF.jpg": {
+    "mtime": 1791853895.532046,
+    "ast_hash": "66e36546062a8d13051f00a09a82b731",
+    "semantic_hash": ""
+  },
+  "needed-documents/IMPLEMENTATION PLAN.jpg": {
+    "mtime": 1791853915.4756682,
+    "ast_hash": "e1f4c47115d5c1d5172aa805e6f9f74d",
+    "semantic_hash": ""
+  },
+  "needed-documents/PRD.jpg": {
+    "mtime": 1791853869.642191,
+    "ast_hash": "0567d659f945712fe2b838ea1c6496b6",
+    "semantic_hash": ""
+  },
+  "needed-documents/TRD.jpg": {
+    "mtime": 1791853877.028788,
+    "ast_hash": "5c3519c2bfe9173feb27c146f551a707",
     "semantic_hash": ""
   }
 }

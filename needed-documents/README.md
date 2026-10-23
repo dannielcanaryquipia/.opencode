@@ -25,7 +25,8 @@ a simple task-management app (users · projects · tasks · comments).
    order the documents should be written and how they reference each other.
 2. Fill the templates for your project, replacing the `_<placeholders>_`.
 3. Keep names, IDs, and data shapes consistent across all docs.
-4. Hand the full set to your AI coding agent and build phase by phase.
+4. Before UI code, run `skills/design-phase/SKILL.md` and sign `DESIGN-APPROVAL.md`.
+5. Hand the full set to your AI coding agent and build phase by phase.
 
 > Source: the six "ITPh" reference cards (PRD, TRD, App Flow, Database Schema,
 > Design Brief, Implementation Plan), plus an added Technical Guide to tie them

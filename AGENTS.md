@@ -16,6 +16,8 @@ Rules:
 When the user wants to build or improve a **website, landing page, or app UI**:
 
 - Use the **`radix-ui`** skill for pre-styled/component UI work (Radix Themes or the shadcn/MCP path — see `RADIX-UI.md`).
+- Use **`suiss-ui`** (`skills/suiss-ui/SKILL.md`) for a fast premium UI upgrade or cross-platform components: 232 shadcn-spec items (components, blocks, charts, patterns) via the `@esuiss` registry, served through the same shadcn MCP - no new server.
+- Use **`design-phase`** (`skills/design-phase/SKILL.md`) before any UI build: lock the screen map, tokens, `@esuiss` component inventory, static screens and sign-off (`templates/design-phase/`) before feature code.
 - Use **`web-animation`** + **`gsap-core`** for motion; `DESIGN.md` holds the canonical tokens (scroll-driven Apple-style animation is allowed and preferred for product pages — scope every trigger, gate on reduced-motion).
 - For **Apple-style interactive/3D pages** (Three.js + scroll storytelling), consult **`OPEN-SOURCE-TEMPLATES.md`** for open-source clones to copy from.
 - Follow the search-fetch-verify protocol in `skills/ui-component-integration.md` before hand-writing components; verify finished UI with the playwright MCP.

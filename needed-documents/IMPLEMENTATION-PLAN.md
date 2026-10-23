@@ -31,7 +31,12 @@ Work is organized into five phases. Each phase has a goal, concrete tasks, and a
   - [ ] Complete [Design Brief](./DESIGN-BRIEF.md) (palette, type, components).
   - [ ] Complete [App Flow](./APP-FLOW.md) and key-screen wireframes.
   - [ ] Review designs against the PRD.
+  - [ ] Fill `templates/design-phase/SCREEN-MAP.md` (every route and state).
+  - [ ] Lock tokens and complete `templates/design-phase/COMPONENT-INVENTORY.md` (search `@esuiss` first).
+  - [ ] Build the component lab and static screens at 390 / 768 / 1440.
+  - [ ] Run `templates/design-phase/DESIGN-APPROVAL.md` and record sign-off.
 - **Done when:** key screens and flows are signed off.
+- **Stop rule:** no Development work starts until `DESIGN-APPROVAL.md` is signed.
 
 ### 3 · Development
 - **Goal:** build the product to spec.

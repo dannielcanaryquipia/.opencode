@@ -8,6 +8,8 @@
 
 A reusable **opencode skill** that gives the AI agent everything it needs to add animations to this project. When you say things like "animate this", "add scroll effects", "make it alive", or "add a fade-in", the agent loads this skill and follows its patterns.
 
+In a full build, `design-phase` runs first: the approved `MOTION-SPEC.md` decides what moves, and this skill implements it.
+
 ## What's Inside
 
 ```

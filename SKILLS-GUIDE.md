@@ -43,6 +43,8 @@
 | `web-animation` | Scroll reveals, fade-ins, stagger, hover cards | Adding motion and engagement (Framer Motion) |
 | `gsap-core` | Complex scroll timelines, SVG morphing | Advanced motion sequences |
 | `ui-styling` | shadcn/ui + Tailwind CSS | Component styling and layout |
+| `suiss-ui` | suiss/ui registry (`@esuiss`) — 232 clean components, blocks, charts, patterns | Premium copy-paste sections; cross-platform React/RN/SwiftUI/Compose |
+| `design-phase` | Design-first gate — screen map, tokens, component inventory, static screens, sign-off | Before building any new site/app or redesign |
 | `design-taste-frontend` | Anti-slop, premium design | Avoiding generic AI patterns |
 | `high-end-visual-design` | Expensive-feeling interfaces | Premium/luxury brand pages |
 | `threeui-integration` | ThreeUI Community WebGL/Three.js/shader components | Animated 3D backgrounds, hero sections, shader buttons/text effects — **note: no GLB/GLTF model slot exists** |

@@ -35,7 +35,7 @@ component sets (or a single-API universal lib: Tamagui, gluestack, Uniwind).
 
 | MCP | Use for | Type |
 |---|---|---|
-| `shadcn` | Searching/installing shadcn-compatible components (shadcn/ui, Skiper UI, Magic UI, Origin UI registries) | local |
+| `shadcn` | Searching/installing shadcn-compatible components (shadcn/ui, Skiper UI, Magic UI, Origin UI, suiss/ui `@esuiss` registries) | local |
 | `vengeanceui` | Searching/fetching VengeanceUI's animated component library (buttons, motion, layout kits) | local |
 | `playwright` | Opening the dev server in a real browser, clicking through new UI, checking it rendered/behaves correctly | local |
 | `figma` | Pulling exact layout, spacing, and component props from a Figma design file, when one is provided | remote |
@@ -54,9 +54,11 @@ component sets (or a single-API universal lib: Tamagui, gluestack, Uniwind).
 
 2. **Search before building.** Query `shadcn` and `vengeanceui` MCPs for a
    component matching the requested UI (e.g. "pricing table," "slide-to-confirm
-   button," "hero with gradient overlay"). Prefer an existing component over a
-   from-scratch build whenever one reasonably fits — it's faster and better
-   tested than a first-draft custom component.
+   button," "hero with gradient overlay"). For a clean, minimal look or a
+   cross-platform set (React, RN, SwiftUI, Compose), search the `@esuiss`
+   registry first — see `skills/suiss-ui/SKILL.md`. Prefer an existing component
+   over a from-scratch build whenever one reasonably fits �?" it's faster and
+   better tested than a first-draft custom component.
 
 3. **Adapt, don't paste blindly.** Once a component is fetched:
    - Match it to this project's existing color tokens, spacing scale, and

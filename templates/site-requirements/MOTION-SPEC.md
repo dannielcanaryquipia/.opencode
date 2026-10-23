@@ -4,6 +4,9 @@ This document is the **motion + visualization contract** for the build. The AI
 implements each section straight from the tables below; you never have to write
 GSAP. Replace the AURA example rows with your own words before Phase 3.
 
+This file is filled during `design-phase` (D5) and frozen in
+`DESIGN-APPROVAL.md`; no motion code is written before that sign-off.
+
 ## Recipe bank
 
 | ID | Recipe | Best for |

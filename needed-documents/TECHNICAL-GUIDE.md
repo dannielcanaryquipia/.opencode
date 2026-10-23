@@ -60,10 +60,13 @@ flowchart TD
    grounded in the PRD's features and the schema's data.
 4. **Write the Implementation Plan.** Only once the above exist, so phases map to
    real, agreed scope.
-5. **Hand the full set to the AI agent** and build phase by phase.
+5. **Run the design phase.** Load `skills/design-phase/SKILL.md`, fill the screen
+   map and component inventory from `templates/design-phase/`, build static
+   screens, and get a signed `DESIGN-APPROVAL.md`.
+6. **Hand the full set to the AI agent** and build phase by phase.
 
 > **Rule of thumb:** no code before the PRD, TRD, and Schema are at least in
-> `Draft` and internally consistent.
+> `Draft`, internally consistent, and the design is signed off.
 
 ---
 
@@ -96,16 +99,20 @@ Suggested kickoff prompt:
 > "Read `TECHNICAL-GUIDE.md` first, then `PRD.md`, `TRD.md`,
 > `DATABASE-SCHEMA.md`, `APP-FLOW.md`, `DESIGN-BRIEF.md`, and
 > `IMPLEMENTATION-PLAN.md`. Build according to the Implementation Plan, phase by
-> phase. Follow the TRD stack and the Database Schema exactly. Ask before
-> deviating from any P0 requirement or non-goal."
+> phase. Follow the TRD stack and the Database Schema exactly. Before feature
+> code, run `skills/design-phase/SKILL.md` and stop at a signed
+> `DESIGN-APPROVAL.md`. Ask before deviating from any P0 requirement or non-goal."
 
 What the agent should do:
 1. **Respect the contract:** P0 features (PRD) + pinned stack (TRD) + schema are
    non-negotiable unless told otherwise.
 2. **Honor non-goals:** don't build what the PRD excludes.
-3. **Build in order:** follow the Implementation Plan phases and App Flow order.
-4. **Verify at phase gates:** use each phase's "Done when" criteria.
-5. **Surface conflicts:** if two docs disagree, flag it instead of guessing.
+3. **Pass the design gate:** run `design-phase`, produce the screen map, token
+   set, component inventory and static screens, and wait for a signed
+   `DESIGN-APPROVAL.md`.
+4. **Build in order:** follow the Implementation Plan phases and App Flow order.
+5. **Verify at phase gates:** use each phase's "Done when" criteria.
+6. **Surface conflicts:** if two docs disagree, flag it instead of guessing.
 
 ---
 
@@ -125,5 +132,7 @@ What the agent should do:
 - [ ] Database Schema matches TRD APIs and PRD features.
 - [ ] App Flow covers every PRD feature's screens + error branches.
 - [ ] Design Brief defines palette, type, and key-screen layouts.
+- [ ] `design-phase` screen map, component inventory and static screens are complete.
+- [ ] `DESIGN-APPROVAL.md` is signed (no feature code before this).
 - [ ] Implementation Plan phases map to agreed scope with owners and dates.
 - [ ] All docs cross-link and use consistent names/IDs.

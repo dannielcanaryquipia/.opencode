@@ -1,6 +1,9 @@
 # Design Tokens — Animation
 
 > Canonical animation values for all projects. The `web-animation` skill reads these.
+>
+> Project-specific tokens are locked during `design-phase` (D2) and recorded in
+> the project's `docs/design/DESIGN-SYSTEM.md`; this file is the default bank.
 
 ---
 

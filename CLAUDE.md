@@ -7,3 +7,8 @@ Rules:
 - If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
 - Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
+
+## UI work
+
+- Before building or redesigning UI, load `skills/design-phase/SKILL.md`; no feature code until `DESIGN-APPROVAL.md` is signed.
+- Use `skills/suiss-ui/SKILL.md` (`@esuiss` registry) before hand-writing components.

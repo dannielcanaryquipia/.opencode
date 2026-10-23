@@ -7,7 +7,7 @@ Your project has a **dev team** — 5 crews implemented as subagents. Whenever y
 | Crew | Agent | Skill inventory (summary) | Dispatch when... |
 |---|---|---|---|
 | **Developers** | `dev-build` | superpowers-* (core), ponytail-* (6), caveman-* (6), systematic-debugging, TDD, karpathy-guidelines, full-output-enforcement, claude-skills/opencode, + ~45 Claude-Cortex engineering skills (patterns, security, infra, perf) | Scaffolding, features, refactors, bugfixes, any code |
-| **Design Studio** | `design-studio` | design-taste-frontend, frontend-design/dev, ui-ux-pro-max, ui-ux-design-pro, minimalist/brutalist, brandkit, brand, banner-design, design, design-system, slides, ui-styling, dashboard-designer, checklist-design, imagegen-* (2), image-to-code, gpt-taste, stitch, high-end-visual-design, redesign, web-animation, gsap-core, emilkowalski-motion, impeccable-polish, + ~20 Claude-Cortex design/UX skills, gemini-image-gen, 2d-pixel-asset, tech-product-landing, threeui-integration | Landing pages, portfolios, redesigns, UI polish, visual direction |
+| **Design Studio** | `design-studio` | design-taste-frontend, frontend-design/dev, ui-ux-pro-max, ui-ux-design-pro, minimalist/brutalist, brandkit, brand, banner-design, design, design-system, slides, ui-styling, dashboard-designer, checklist-design, imagegen-* (2), image-to-code, gpt-taste, stitch, high-end-visual-design, redesign, design-phase, suiss-ui, web-animation, gsap-core, emilkowalski-motion, impeccable-polish, + ~20 Claude-Cortex design/UX skills, gemini-image-gen, 2d-pixel-asset, tech-product-landing, threeui-integration | Landing pages, portfolios, redesigns, UI polish, visual direction |
 | **Game Dev** | `game-dev` | game-development, game-developer, game-development-* (10), unity-* (3), unreal-engine-cpp-pro + claude-skills/unreal-* (5), godot-* (13), + media/asset pipeline (2d-pixel-asset, audio-to-midi, midi-synth, seedance) | Game projects, engine work, shaders, physics, multiplayer, game assets |
 | **QA/Review** | `qa-review` | requesting/receiving code review, verification-before-completion, superpowers verification, caveman-review, ponytail-review, caveman-commit, TDD, + ~20 Claude-Cortex review/audit skills (multi-specialist-review, testing-*, doc-*, accessibility, ux-review, security, playwright/webapp-testing), website-compliance-checklist | Review gates, bug hunts, "is it done?" — read-only, never edits |
 | **Ops/Planning** | `ops-planning` | brainstorming, writing-plans, executing-plans, superpowers-* (planning), dispatching-parallel-agents, subagent-driven-development, git-worktrees, finish-branch, writing-skills, caveman-compress, graphify-setup, + ~30 Claude-Cortex planning/PM/doc skills | Kickoff, specs, plans, work splitting, coordination, docs, research |
@@ -22,6 +22,8 @@ Your project has a **dev team** — 5 crews implemented as subagents. Whenever y
 ### Design Studio — `design-studio`
 **Core direction:** `design-taste-frontend` (+`v1`), `frontend-design`, `frontend-dev`, `ui-ux-pro-max`, `ui-ux-design-pro-skill`, `minimalist-ui`, `industrial-brutalist-ui`, `gpt-taste`, `stitch-design-taste`, `high-end-visual-design` (soft-skill), `taste-skill` (+`v1`)
 
+**Design gate:** `design-phase` owns D0–D7 before feature code — screen map, tokens, `@esuiss` component inventory, component lab, static screens at 390/768/1440, motion spec and a named `DESIGN-APPROVAL.md` sign-off. `suiss-ui` supplies the registry path; do not invent components that the inventory has not approved.
+
 **Brand & identity:** `brandkit`, `brand`, `banner-design`, `design`, `design-system`, `slides`, `ui-styling`, `brand-library-architect`
 
 **Products & dashboards:** `dashboard-designer-skill`, `checklist-design`, `chart-builder`
@@ -30,7 +32,7 @@ Your project has a **dev team** — 5 crews implemented as subagents. Whenever y
 
 **Motion & polish:** `web-animation`, `gsap-core`, `emilkowalski-motion`, `impeccable-design-polish`, `redesign-existing-projects`
 
-**UI component integration** (`skills/ui-component-integration.md`): search-before-build protocol using the `shadcn`, `vengeanceui`, `playwright` (test), and `figma` (design source) MCPs — globally configured in `~/.config/opencode/opencode.jsonc`. Only `playwright` is enabled by default; `shadcn`, `vengeanceui`, and `figma` are **disabled on-demand** — run `opencode mcp enable <name>` before a UI-integration task (and `opencode mcp disable <name>` after). Owns step 0 (platform routing) and steps 1–3 (design-source lookup, component search, adaptation to design tokens); routes by target — web → shadcn MCP, Expo native → `expo-*` skills, non-Expo RN → RN shadcn ports; hands off wiring to `dev-build` and Playwright verification to `qa-review`. See `UI-COMPONENT-MCP.md`.
+**UI component integration** (`skills/ui-component-integration.md`): search-before-build protocol using the `shadcn` (including the `@esuiss` suiss/ui registry), `vengeanceui`, `playwright` (test), and `figma` (design source) MCPs — globally configured in `~/.config/opencode/opencode.jsonc`. Only `playwright` is enabled by default; `shadcn`, `vengeanceui`, and `figma` are **disabled on-demand** — run `opencode mcp enable <name>` before a UI-integration task (and `opencode mcp disable <name>` after). Owns step 0 (platform routing) and steps 1–3 (design-source lookup, component search, adaptation to design tokens); routes by target — web → shadcn MCP, Expo native → `expo-*` skills, non-Expo RN → RN shadcn ports; hands off wiring to `dev-build` and Playwright verification to `qa-review`. See `UI-COMPONENT-MCP.md`.
 
 **Claude-Cortex design/UX (~20):** `canvas-design`, `color-palette`, `design-critiquer`, `design-journey-review`, `design-system-architecture`, `interaction-design`, `super-saiyan`, `ui-design-aesthetics`, `ui-ux-review-suite`, `user-journey-mapping`, `ux-interaction-review`, `ux-researcher`, `ux-review`, `ux-writer`, `visual-modes`, `accessibility-audit`
 
@@ -85,6 +87,8 @@ To staff a crew: create `agent/<crew>.md` (mirror the 5 existing agent files), t
      game/engine work      → game-dev
      completion claims     → qa-review (final gate)
      public/client site    → qa-review runs `website-compliance-checklist` before delivery
+5b. DESIGN GATE → design-studio runs `design-phase`; no feature code until
+                `DESIGN-APPROVAL.md` is signed
 6. DISPATCH    → Task tool, parallel when chunks are independent
 7. VERIFY      → lint/typecheck/build/tests with real output
 8. GATE        → qa-review approves or requests changes
@@ -98,6 +102,7 @@ To staff a crew: create `agent/<crew>.md` (mirror the 5 existing agent files), t
 - **One crew per concern** — don't let a single agent do design + code + QA in one shot
 - **QA is a gate, not a step** — never mark work complete without a `qa-review` pass
 - **Skills before code** — crews must load their skills; improvising engine/design/planning without them is how hallucinations happen. Use the inventory above to pick the right skill; when in doubt, `graphify query` the skills graph (`graphify-out/`) for what covers a task
+- **Design before code** — for any UI, `design-studio` completes `design-phase` and a signed `DESIGN-APPROVAL.md` before `dev-build` writes feature code
 - **Read the repo first** — check CLAUDE.md / AGENTS.md / existing files before writing anything (avoids duplicate files)
 - **Evidence over assertions** — every "done" claim must come with command output or a code reference
 
@@ -106,4 +111,5 @@ This `.opencode/` folder is the portable team unit. To staff a new project:
 1. Copy this `.opencode/` folder into the project root
 2. Copy `.opencode/templates/PROJECT-TEAM.md` to the project root (or reference it from AGENTS.md/CLAUDE.md)
 3. Run `/graphify-setup` in the project root so the team can query the skills graph
-4. The AI reads the guide on the first task and runs the protocol
+4. Before UI work, load `design-phase` and get `DESIGN-APPROVAL.md` signed
+5. The AI reads the guide on the first task and runs the protocol
