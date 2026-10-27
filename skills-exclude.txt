@@ -1,0 +1,9 @@
+# Skill names sync-global.ps1 should never link into ~/.claude/skills.
+# One name per line; '#' starts a comment. Re-run .\sync-global.ps1 after editing:
+# links for names added here are removed, names removed here get linked again.
+
+# Templates and placeholders from skill libraries, not real skills
+your-skill-name
+template-skill
+template-skill-enhanced
+description
